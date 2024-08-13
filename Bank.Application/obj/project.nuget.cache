@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "H/2zpOYGIztN224bDX3BQ5YHj2j5+plh8lMhD1BKbqJ3LaSBaAnUyB7Llc0lHgR1QkvrIxsrqGZUJZPcwIvJ8g==",
+  "success": true,
+  "projectFilePath": "/Users/faelsosa/RiderProjects/Bank/Bank.Application/Bank.Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/faelsosa/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
+    "/Users/faelsosa/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/Users/faelsosa/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/Users/faelsosa/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/Users/faelsosa/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
