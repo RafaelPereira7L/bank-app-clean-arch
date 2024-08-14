@@ -1,0 +1,16 @@
+/Users/faelsosa/RiderProjects/Bank/Bank.Application/bin/Debug/net8.0/Bank.Application.deps.json
+/Users/faelsosa/RiderProjects/Bank/Bank.Application/bin/Debug/net8.0/Bank.Application.dll
+/Users/faelsosa/RiderProjects/Bank/Bank.Application/bin/Debug/net8.0/Bank.Application.pdb
+/Users/faelsosa/RiderProjects/Bank/Bank.Application/bin/Debug/net8.0/Bank.Domain.dll
+/Users/faelsosa/RiderProjects/Bank/Bank.Application/bin/Debug/net8.0/Bank.Domain.pdb
+/Users/faelsosa/RiderProjects/Bank/Bank.Application/obj/Debug/net8.0/Bank.Application.csproj.AssemblyReference.cache
+/Users/faelsosa/RiderProjects/Bank/Bank.Application/obj/Debug/net8.0/Bank.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/faelsosa/RiderProjects/Bank/Bank.Application/obj/Debug/net8.0/Bank.Application.AssemblyInfoInputs.cache
+/Users/faelsosa/RiderProjects/Bank/Bank.Application/obj/Debug/net8.0/Bank.Application.AssemblyInfo.cs
+/Users/faelsosa/RiderProjects/Bank/Bank.Application/obj/Debug/net8.0/Bank.Application.csproj.CoreCompileInputs.cache
+/Users/faelsosa/RiderProjects/Bank/Bank.Application/obj/Debug/net8.0/Bank.App.D97C6606.Up2Date
+/Users/faelsosa/RiderProjects/Bank/Bank.Application/obj/Debug/net8.0/Bank.Application.dll
+/Users/faelsosa/RiderProjects/Bank/Bank.Application/obj/Debug/net8.0/refint/Bank.Application.dll
+/Users/faelsosa/RiderProjects/Bank/Bank.Application/obj/Debug/net8.0/Bank.Application.pdb
+/Users/faelsosa/RiderProjects/Bank/Bank.Application/obj/Debug/net8.0/ref/Bank.Application.dll
+/Users/faelsosa/RiderProjects/Bank/Bank.Application/obj/Debug/net8.0/Bank.Application.sourcelink.json
