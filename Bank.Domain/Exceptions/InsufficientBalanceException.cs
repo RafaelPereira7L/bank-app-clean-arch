@@ -1,6 +1,3 @@
 namespace Bank.Domain.Exceptions;
 
-public class InsufficientBalanceException
-{
-    
-}
+public class InsufficientBalanceException() : Exception("Insufficient balance");

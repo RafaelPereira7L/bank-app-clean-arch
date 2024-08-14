@@ -9,3 +9,4 @@
 /Users/faelsosa/RiderProjects/Bank/Bank.Domain/obj/Debug/net8.0/refint/Bank.Domain.dll
 /Users/faelsosa/RiderProjects/Bank/Bank.Domain/obj/Debug/net8.0/Bank.Domain.pdb
 /Users/faelsosa/RiderProjects/Bank/Bank.Domain/obj/Debug/net8.0/ref/Bank.Domain.dll
+/Users/faelsosa/RiderProjects/Bank/Bank.Domain/obj/Debug/net8.0/Bank.Domain.sourcelink.json

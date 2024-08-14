@@ -9,5 +9,5 @@ public interface IAccountRepository
     Task<Account?> GetAccountByAccountNumberAsync(string accountNumber);
     Task<IEnumerable<Account>> GetAccountsAsync();
     Task<Account> UpdateAccountAsync(Account account);
-    Task DeleteAccountAsync(Guid id);
+    Task DeleteAccountAsync(Account account);
 }

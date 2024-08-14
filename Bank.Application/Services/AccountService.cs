@@ -2,6 +2,7 @@ using AutoMapper;
 using Bank.Application.DTOs;
 using Bank.Application.Interfaces;
 using Bank.Domain.Entities;
+using Bank.Domain.Exceptions;
 using Bank.Domain.Interfaces;
 
 namespace Bank.Application.Services;
@@ -18,7 +19,7 @@ public class AccountService(IAccountRepository accountRepository, IMapper mapper
     {
         var account = await accountRepository.GetAccountByIdAsync(id);
 
-        if (account == null) throw new Exception("Account not found");
+        if (account == null) throw new AccountNotFoundException();
         var balance = account.GetBalance();
 
         return new AccountWithBalanceDto
@@ -38,7 +39,7 @@ public class AccountService(IAccountRepository accountRepository, IMapper mapper
     {
         var account = await accountRepository.GetAccountByAccountNumberAsync(accountNumber);
 
-        if (account == null) throw new Exception("Account not found");
+        if (account == null) throw new AccountNotFoundException();
         var balance = account.GetBalance();
 
         return new AccountWithBalanceDto
@@ -63,7 +64,7 @@ public class AccountService(IAccountRepository accountRepository, IMapper mapper
     {
         var account = await accountRepository.GetAccountByIdAsync(id);
 
-        if (account == null) throw new Exception("Account not found");
+        if (account == null) throw new AccountNotFoundException();
         
         account.AccountHolderName = accountDto.AccountHolderName;
         await accountRepository.UpdateAccountAsync(account);
@@ -74,9 +75,9 @@ public class AccountService(IAccountRepository accountRepository, IMapper mapper
         var account = await accountRepository.GetAccountByIdAsync(id);
         if (account is null)
         {
-            throw new Exception("Account not found");
+            throw new AccountNotFoundException();
         }
         
-        await accountRepository.DeleteAccountAsync(account.Id);
+        await accountRepository.DeleteAccountAsync(account);
     }
 }

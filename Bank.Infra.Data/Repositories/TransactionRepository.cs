@@ -7,66 +7,22 @@ namespace Bank.Infra.Data.Repositories;
 
 public class TransactionRepository(ApplicationDbContext context) : ITransactionRepository
 {
-    public async Task<Transaction> DepositAsync(string receiverAccountNumber, decimal amount)
+    public async Task DepositAsync(Transaction depositTransaction)
     {
-        var receiverAccount = await context.Accounts.FirstOrDefaultAsync(a => a.AccountNumber == receiverAccountNumber);
-        
-        if (receiverAccount == null)
-        {
-            throw new Exception("Account not found");
-        }
-        
-        var transaction = Transaction.Factories.Deposit(receiverAccount, amount);
-        
-        context.Transactions.Add(transaction);
+        context.Transactions.Add(depositTransaction);
         await context.SaveChangesAsync();
-        return transaction;
     }
 
-    public async Task<Transaction> WithdrawAsync(string senderAccountNumber, decimal amount)
+    public async Task WithdrawAsync(Transaction withdrawTransaction)
     {
-        var senderAccount = await context.Accounts
-            .Include(a => a.SentTransactions)
-            .Include(a => a.ReceivedTransactions)
-            .FirstOrDefaultAsync(a => a.AccountNumber == senderAccountNumber);
-        
-        if (senderAccount == null)
-        {
-            throw new Exception("Account not found");
-        }
-        
-        var balance = senderAccount.GetBalance();
-
-
-        var transaction = Transaction.Factories.Withdraw(senderAccount, balance, amount);
-        
-        context.Transactions.Add(transaction);
+        context.Transactions.Add(withdrawTransaction);
         await context.SaveChangesAsync();
-        return transaction;
     }
 
-    public async Task<Transaction> TransferAsync(string senderAccountNumber, string receiverAccountNumber, decimal amount)
+    public async Task TransferAsync(Transaction transferTransaction)
     {
-        var senderAccount = await context.Accounts.FirstOrDefaultAsync(a => a.AccountNumber == senderAccountNumber);
-        var receiverAccount = await context.Accounts.FirstOrDefaultAsync(a => a.AccountNumber == receiverAccountNumber);
-        
-        if (senderAccount == null)
-        {
-            throw new Exception("Account not found");
-        }
-        
-        if (receiverAccount == null)
-        {
-            throw new Exception("Account not found");
-        }
-        
-        var balance = senderAccount.GetBalance();
-
-        var transaction = Transaction.Factories.Transfer(senderAccount, receiverAccount, balance, amount);
-        
-        context.Transactions.Add(transaction);
+        context.Transactions.Add(transferTransaction);
         await context.SaveChangesAsync();
-        return transaction;
     }
 
     public async Task<IEnumerable<Transaction>> GetTransactionsAsync(string accountNumber)

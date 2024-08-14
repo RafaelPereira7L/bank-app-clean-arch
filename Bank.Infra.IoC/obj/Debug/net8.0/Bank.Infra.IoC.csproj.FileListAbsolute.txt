@@ -17,3 +17,4 @@
 /Users/faelsosa/RiderProjects/Bank/Bank.Infra.IoC/obj/Debug/net8.0/ref/Bank.Infra.IoC.dll
 /Users/faelsosa/RiderProjects/Bank/Bank.Infra.IoC/bin/Debug/net8.0/Bank.Application.dll
 /Users/faelsosa/RiderProjects/Bank/Bank.Infra.IoC/bin/Debug/net8.0/Bank.Application.pdb
+/Users/faelsosa/RiderProjects/Bank/Bank.Infra.IoC/obj/Debug/net8.0/Bank.Infra.IoC.sourcelink.json

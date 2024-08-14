@@ -1,13 +1,14 @@
 using System.Text.Json.Serialization;
+using Bank.Filters;
 using Infra.IoC;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
-builder.Services.AddControllers().AddJsonOptions(options =>
-{
-    options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
-});
+builder.Services.AddControllers(c => c.Filters.Add(new ExceptionFilter()))
+    .AddJsonOptions(
+        options => { options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()); });
+    
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

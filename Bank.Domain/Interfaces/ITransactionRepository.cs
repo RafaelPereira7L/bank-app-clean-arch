@@ -4,8 +4,8 @@ namespace Bank.Domain.Interfaces;
 
 public interface ITransactionRepository
 {
-    Task<Transaction> DepositAsync(string receiverAccountNumber, decimal amount);
-    Task<Transaction> WithdrawAsync(string senderAccountNumber, decimal amount);
-    Task<Transaction> TransferAsync(string senderAccountNumber, string receiverAccountNumber, decimal amount);
+    Task DepositAsync(Transaction transaction);
+    Task WithdrawAsync(Transaction transaction);
+    Task TransferAsync(Transaction transaction);
     Task<IEnumerable<Transaction>> GetTransactionsAsync(string accountNumber);
 }

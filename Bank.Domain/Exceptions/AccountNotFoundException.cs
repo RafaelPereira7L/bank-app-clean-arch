@@ -1,6 +1,3 @@
 namespace Bank.Domain.Exceptions;
 
-public class AccountNotFoundException
-{
-    
-}
+public class AccountNotFoundException() : Exception("Account not found");

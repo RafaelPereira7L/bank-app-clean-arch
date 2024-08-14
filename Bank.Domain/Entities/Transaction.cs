@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using Bank.Domain.Exceptions;
 
 namespace Bank.Domain.Entities;
 
@@ -40,7 +41,7 @@ public class Transaction : BaseEntity
         {
             if(senderBalance < amount)
             {
-                throw new Exception("Insufficient balance");
+                throw new InsufficientBalanceException();
             }
             
             return new Transaction
@@ -55,7 +56,7 @@ public class Transaction : BaseEntity
         {
             if(senderBalance < amount)
             {
-                throw new Exception("Insufficient balance");
+                throw new InsufficientBalanceException();
             }
             
             return new Transaction

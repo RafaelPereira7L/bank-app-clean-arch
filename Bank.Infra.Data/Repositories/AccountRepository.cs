@@ -44,12 +44,8 @@ public class AccountRepository(ApplicationDbContext context) : IAccountRepositor
         return account;
     }
 
-    public async Task DeleteAccountAsync(Guid id)
+    public async Task DeleteAccountAsync(Account account)
     {
-        var account = await GetAccountByIdAsync(id);
-            
-        if (account == null) throw new Exception("Account not found");
-        
         context.Accounts.Remove(account);
         await context.SaveChangesAsync();
     }

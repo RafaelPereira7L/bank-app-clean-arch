@@ -15,3 +15,4 @@
 /Users/faelsosa/RiderProjects/Bank/Bank.Infra.Data/obj/Debug/net8.0/Bank.Infra.Data.pdb
 /Users/faelsosa/RiderProjects/Bank/Bank.Infra.Data/obj/Debug/net8.0/Bank.Infra.Data.genruntimeconfig.cache
 /Users/faelsosa/RiderProjects/Bank/Bank.Infra.Data/obj/Debug/net8.0/ref/Bank.Infra.Data.dll
+/Users/faelsosa/RiderProjects/Bank/Bank.Infra.Data/obj/Debug/net8.0/Bank.Infra.Data.sourcelink.json

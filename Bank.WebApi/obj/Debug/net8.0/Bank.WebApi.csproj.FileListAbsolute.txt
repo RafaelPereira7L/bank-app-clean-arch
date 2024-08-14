@@ -112,3 +112,4 @@
 /Users/faelsosa/RiderProjects/Bank/Bank.WebApi/bin/Debug/net8.0/AutoMapper.dll
 /Users/faelsosa/RiderProjects/Bank/Bank.WebApi/bin/Debug/net8.0/Bank.Application.dll
 /Users/faelsosa/RiderProjects/Bank/Bank.WebApi/bin/Debug/net8.0/Bank.Application.pdb
+/Users/faelsosa/RiderProjects/Bank/Bank.WebApi/obj/Debug/net8.0/Bank.WebApi.sourcelink.json
